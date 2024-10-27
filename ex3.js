@@ -7,7 +7,7 @@ function generateTree(x) {
     for (var s = 1; s < x; s++) {
         firstRow += " ";
     }
-    firstRow += `<span class="gold-top">*</span><br>`;
+    firstRow += "*\n";
     Tree += firstRow;
 
     for (var i = 1; i <= x; i++) {
