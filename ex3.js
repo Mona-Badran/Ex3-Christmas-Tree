@@ -1,9 +1,11 @@
-function generateTree(rows) {
+var x = parseInt(prompt("Enter x:"));
+
+function generateTree(x) {
     var Tree = "";
 
-    for (var i = 1; i <= rows; i++) {
+    for (var i = 1; i <= x; i++) {
         var row = "";
-        for (var j = 1; j <= rows - i; j++) {
+        for (var j = 1; j <= x - i; j++) {
             row += " ";
         }
 
@@ -24,4 +26,4 @@ function generateTree(rows) {
     document.body.appendChild(preElement);
 }
 
-generateTree(10);
+generateTree(x);
